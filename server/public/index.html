@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To Do List</title>
+    <script src="vendors/jquery.js"></script>
+    <script src="client.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="container-sm">
+    <h1>Task Organizer</h1>
+
+    <div id="addtask">
+      <label for="task">Task</label>
+      <input type="text" id="taskInput" />
+
+      <button id="addTask" class="btn btn-secondary">ADD</button>
+    </div>
+    <h2>To-do List:</h2>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Task Name</th>
+          <th>Completed</th>
+          <th>Mark as complete</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody"></tbody>
+    </table>
+  </body>
+</html>
