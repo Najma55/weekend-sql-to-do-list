@@ -29,7 +29,7 @@ router.post('/create-task', (req, res) => {
         )
   });
   
-  // Mark as completed - patch request - Send ID - return updated task
+  // Mark as completed - put request - Send ID - return updated task
   router.put('/mark-completed/:taskId', (req, res) => {
     console.log('hello world'); 
     let taskId = req.params.taskId
@@ -85,7 +85,7 @@ router.post('/create-task', (req, res) => {
   });
   
   
-  // Fetch All Task - Get request - no input - return all tasks
+  // Get All Task - Get request - no input - return all tasks
   router.get('/get-tasks', (req, res) => {
     console.log('hello world');  
     let queryText = 'SELECT * FROM "tasks" ORDER BY id desc;'
