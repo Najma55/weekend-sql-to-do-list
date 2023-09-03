@@ -14,12 +14,13 @@
   <body class="container-sm">
     <h1>Task Organizer</h1>
 
-    <div id="addtask">
+    <form id="addtask">
       <label for="task">Task</label>
-      <input type="text" id="taskInput" />
+      <input type="text" id="taskInput" minlength="3" />
 
-      <button id="addTask" class="btn btn-secondary">ADD</button>
-    </div>
+
+      <button id="addTask" class="btn btn-secondary" type="submit">ADD</button>
+    </form>
     <h2>To-do List:</h2>
     <table id="taskTable">
       <thead>

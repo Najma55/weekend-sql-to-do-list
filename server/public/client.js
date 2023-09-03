@@ -40,12 +40,12 @@ function getTask() {
       // console.log("GET /task response", response);
       for (let task of response) {
         $("#taskTableBody").append(`
-          <tr class="" id=${task.id} data-id=${task.id}>
+          <tr class=${task.isComplete===true ?'done':''} id=${task.id} data-id=${task.id}>
           <td>${task.id}</td>
           <td>${task.text}</td>
-            <td>${task.isComplete}</td>
+            <td>${task.isComplete===true ?'Yes':'No'}</td>
 
-            <td><button  class="completeButton">COMPLETE</button></td>
+            <td><button class="completeButton">COMPLETE</button></td>
             <td><button class="deleteButton">DELETE</button></td>
           
           </tr>
